@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+   <div class="content" >
     <head>
         <!--MY bOOTSTRAP CDN INITIALIZATION-->
         <meta charset="utf-8">
@@ -10,11 +11,25 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!--Custom CSS-->
         <link rel="stylesheet" href="style.css">
+        <!--DARK MODE CSS, I got some help for the JavaScript function.-->
+        <style>
+            body {
+              padding: 25px;
+              background-color: white;
+              color: black;
+              font-size: 25px;
+            }
+
+            .dark-mode {
+              background-color: black;
+              color: whitesmoke;
+            }
+        </style>
     </head>
 
     <body>
-        <header class="container left-justified">
-            <h1 id="h1">HICKIES Originals</h1>
+        <header >
+            <h1 id="pad_l"><b>HICKIES Originals</b></h1>
         </header>
 
         <main class="container">
@@ -88,12 +103,12 @@
             <span id="dot18"></span>
 
             <div>
-                <br>
+                
                 <!-- This is a ancer tag. href allows you to designet targeted website -->
-                <a href="https://cdn.shopify.com/s/files/1/0669/7933/files/MeasurementChart_MensTops_1024x1024.jpg?9897290845235298722" alt="Measurement Chart" onclick="myFunction()"><b>Size Guide</b>
+                <a id="text_size" href="https://cdn.shopify.com/s/files/1/0669/7933/files/MeasurementChart_MensTops_1024x1024.jpg?9897290845235298722" alt="Measurement Chart" onclick="myFunction()"><b>Size Guide</b>
                 </a>
                 <br>
-                <a href=""><b>Your Custom Fit</b></a>
+                <a id="text_size" href=""><b>Your Custom Fit</b></a>
                 <br><br>
             </div>
 
@@ -104,12 +119,13 @@
 
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                 <button type="button" class="btn btn-add">Add to Cart</button>
-
+            </div>
                 <br>
                 <hr>
-
+                
                 <div>
                     <h5><b>DETAILS</b></h5>
+                    <button id="pad_l" type="button" class="btn btn-add" onclick="myFunction1()">Toggle dark mode</button>
                 </div>
 
                 <hr>
@@ -124,8 +140,15 @@
                 <script>
                     function myFunction() {
                         alert("You're about to be redirected to another window!");
+                    }   
+                    /*Initiate dark mode*/
+                    function myFunction1() {
+                       var element = document.body;
+                       element.classList.toggle("dark-mode");
                     }
                 </script>
+                
+     </main>           
     </body>
-
+</div>
 </html>

@@ -314,6 +314,22 @@
 {
     padding-left:-10px;
 }
+
+#pad_l
+{
+    padding-left:20px;
+}
+
+#text_size
+{ 
+    font-size: 70%;
+}
+
+#searchbar{ 
+     margin-left: 15%; 
+     padding:15px; 
+     border-radius: 10px; 
+   } 
 /*My Bootstrap for rounded button*/
 
 .btn {
@@ -360,3 +376,13 @@
   border: 2px solid rgba(58, 133, 191, 0.75);
 }
 
+.content 
+{
+  max-width: 500px;
+  margin: auto;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
