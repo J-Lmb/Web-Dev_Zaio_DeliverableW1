@@ -12,3 +12,5 @@ HTML & CSS.
 5.	Modal similarity	
 6.	Commenting and style of code	
 7.	Code modularity - single function, singular purpose, reusable
+
+![](/images/preview.JPG)
